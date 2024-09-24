@@ -1,0 +1,65 @@
+/* This part resets the default formatting of the webpage. */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+/* "There's nothing left... Holy Christ, there's nothing left!" */
+
+body {
+    color: #2c2c2c;
+    background-color: #ffffff;
+
+    font-family: "Roboto Slab";
+    font-size: 18px;
+    font-weight: normal;
+    width: 70%;
+    margin: auto;
+}
+
+h1 {
+    color: #15429a;
+    font-family: "Kanit";
+    font-size: 40px;
+    font-weight: bold;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+h2 {
+    color: #15429a;
+    font-family: "Kanit";
+    font-size: 32px;
+    font-weight: normal;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+h6 {
+    color: #15429a;
+}
+
+ul, ol {
+    margin-left: 24px;
+}
+
+a {
+    color: #15429a;
+}
+
+a:hover {
+    color: #5b0cc7;
+}
+
+a:active {
+    color: #c51515;
+}
+
+a:focus {
+    color: #fde5e5;
+}
+
+a:visited{
+    color: #5b0cc7;
+}
