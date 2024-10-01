@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Blog - PoliStat</title>
+        <title>The PoliStat Blog</title>
         <link rel="shortcut icon" type="image/webp" href="assets/images/bill.webp"/>
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -52,6 +52,9 @@
                     But how did this process come to be, and what are the key elements that make it 
                     so pivotal?</p>
             
+                <img id="rfk" src="assets/images/rfk.png" alt="A close-up photo of a slightly deranged
+                 and/or elated RFK Jr.">
+
                 <h2>History of American Presidential Elections</h2>
                 <p>The first U.S. presidential election took place in 1789, electing George Washington
                     as the nation's first president. Since then, the process has evolved significantly.
@@ -69,12 +72,16 @@
                 </ul>
             </article>
 
-            <section>
-                <h2>Subscribe to our newsletter - you will regret it!</h2>
+            <br>
+            <hr>
+            <br>
+
+            <section id="newsletter">
+                <h2>Sign up for our newsletter!</h2>
                 <form>
-                    <label for="newsletter" >Enter your email here...</label><br>
-                    <input id="newsletter" type="email" placeholder="jimmy.carter@peanutfarm.com" size="26">
-                    <button type="submit"><img src="assets/images/rfk.png" height="32"><br>Do It</button>
+                    <label for="newsletter-submit" >Your Email:</label>
+                    <input id="email-box" type="email" placeholder="jimmy.carter@peanutfarm.com" size="26">
+                    <button class="important-button" type="submit">Do It</button>
                 </form>
             </section>
             
@@ -86,24 +93,26 @@
             <hr>
             <br>
 
-            <h3>Related articles...</h3>
+            <h3>Related articles...</h3><br>
+            <div class="article-flex">
+                <article id="article-1">
+                    <img src="assets/images/kamala.jpg" width="250" height="175">
+                    <h5>Harris promises “$15 Wawa gift card”<br> for every American</h5>
+                    <h6 class="article-date">September 16, 2024</h6>
+                </article>
 
-            <img src="assets/images/jimmy.webp" width="250" height="150">
-            <h5><a href="https://theonion.com/jimmy-carter-beginning-to-worry-that-he-will-never-die-1850198184/">
-                The Onion - Jimmy Carter Beginning To <br> Worry That He Will Never Die</a></h5>
-            <h6>March 7, 2023</h6>
+                <article id="article-2">
+                    <img src="assets/images/rfk.png" alt="RFK Jr. stares at the camera, in a Spongebob close-up style." width="250" height="175">
+                    <h5>Will RFK Jr. lose support among anti-<br>whale-chainsawers?</h5>
+                    <h6 class="article-date">September 14, 2024</h6>
+                </article>
 
-            <img src="assets/images/andrew_ryan.jpg" width="250" height="150>"
-            <h5><br>Andrew Ryan's Vision for Free-Market <br> Innovation</h5>
-            <h6>December 31, 1958</h6>
-
-            <img src="assets/images/rfk.png" alt="RFK Jr. stares at the camera, in a Spongebob close-up style." width="250" height="150>"
-            <h5><br>Will RFK Jr. lose support among anti-<br>whale-chainsawers?</h5>
-            <h6>September 14, 2024</h6>
-
-            <img src="assets/images/kamala.jpg" width="250" height="150>"
-            <h5><br>Harris promises “$15 Wawa gift card”<br> for every American</h5>
-            <h6>September 16, 2024</h6>
+                <article id="article-3">
+                    <img src="assets/images/andrew_ryan.jpg" width="250" height="175">
+                    <h5>Andrew Ryan's Vision for Free-Market <br> Innovation</h5>
+                    <h6 class="article-date">December 31, 1958</h6>
+                </article>
+            </div>
         </footer>
     </body>
 </html>

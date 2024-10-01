@@ -3,7 +3,6 @@
     margin: 0px;
     padding: 0px;
 }
-/* "There's nothing left... Holy Christ, there's nothing left!" */
 
 body {
     color: #2c2c2c;
@@ -63,3 +62,114 @@ a:focus {
 a:visited{
     color: #5b0cc7;
 }
+
+#rfk {
+    float: right;
+    width: 250px;
+    height: 200px;
+}
+
+.article-date {
+    font-size: 0.75vw;
+}
+
+#newsletter {
+    border: #15429a;
+    border-style: solid;
+    border-radius: 30px;
+    border-width: 1px;
+
+    margin: auto;
+
+    padding: 30px;
+    /* 10px of padding on all sides */
+}
+
+#newsletter h2 {
+    text-align: center;
+    margin-bottom: 20px;
+
+    font-size: 3vw;
+}
+
+#newsletter form {
+    margin: auto;
+    width: fit-content;
+}
+
+#email-box {
+    background: #f6f6f6;
+    border: 0px;
+    border-radius: 45px;
+    /* padding: 12px 18px; */
+    padding: 1vw 1.5vw;
+    font-family: "Roboto Slab";
+    font-size: 1vw;
+    /* text-decoration: underline; */
+    
+    color: #bfbfbf;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.important-button {
+    background: #15429a;
+    border: 0px;
+    border-radius: 45px;
+    /* padding: 12px 18px; */
+    padding: 1vw 1.5vw;
+    font-family: "Roboto Slab";
+    font-size: 1vw;
+    /* text-decoration: underline; */
+    
+    color: #ffffff;
+
+    transition: all 0.15s ease-in;
+}
+
+.important-button:hover {
+    transition: all 0.15s ease-in;
+    background: #416cbf;
+}
+
+
+
+.article-flex {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.article-flex h5 {
+    font-size: 0.75em;
+}
+
+/*
+.article-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.article-grid img {
+    width: 100%;
+}
+
+#article-1 {
+    first value is where it starts on the grid.
+    the second value is how much it spans
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
+}
+
+#article-2 {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+}
+
+#article-3 {
+    grid-column: 2 / span 2;
+    grid-row: 2 / span 2;
+}
+*/
