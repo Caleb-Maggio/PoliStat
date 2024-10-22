@@ -1,0 +1,77 @@
+body {
+    margin: 0px;
+}
+
+a {
+    font-family: "Roboto Slab";
+    font-weight: normal;
+    font-size: 20px;
+}
+h1 {
+    font-family: "Roboto Slab";
+    font-weight: normal;
+    font-size: 32px;
+    color: white;
+}
+
+#menubar {
+    background-color: #15429A;
+    color: white;
+    height: 75px;
+    display: flex;
+    
+}
+
+#menubar div:first-of-type {
+    height: 100%;
+    width: 75px;
+    background-color: grey;
+    margin-right: auto;
+}
+
+#menubar-links-middle {
+    margin: auto;
+}
+
+.menubar-link {
+    padding: 5px 22px;
+    margin: 0px 10px;
+    border: 2px;
+    border-color: white;
+    border-style: solid;
+    border-radius: 8px;
+}
+
+.red-link-special {
+    padding: 5px 22px;
+    margin: 0px 7px;
+    border: 2px;
+    border-color: white;
+    border-style: solid;
+    border-radius: 8px;
+    background-color: white;
+    color: #c51515;
+}
+
+.blue-link-special {
+    padding: 5px 22px;
+    margin: 0px 7px;
+    border: 2px;
+    border-color: white;
+    border-style: solid;
+    border-radius: 8px;
+    background-color: white;
+    color: #15429A;
+}
+
+#menubar-link-red {
+    margin-left: auto;
+    background-color: #c51515;
+    padding: 0px 30px;
+    display: flex;
+    align-items: center;
+}
+
+.blue-filled-box {
+    background-color: #15429A;
+}
