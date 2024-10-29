@@ -7,11 +7,30 @@ a {
     font-weight: normal;
     font-size: 20px;
 }
+
 h1 {
+    font-family: "Kanit";
+    font-weight: 600;
+    font-size: 40px;
+    color: #15429A;
+    margin: 5px;
+}
+
+p {
     font-family: "Roboto Slab";
-    font-weight: normal;
-    font-size: 32px;
-    color: white;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 20px;
+    color: #15429A;
+    margin: 5px;
+}
+
+li {
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-size: 20px;
+    color: #15429A;
 }
 
 #menubar {
@@ -29,39 +48,26 @@ h1 {
     margin-right: auto;
 }
 
-#menubar-links-middle {
+#menubar-links {
     margin: auto;
 }
 
-.menubar-link {
+.standard-link {
     padding: 5px 22px;
     margin: 0px 10px;
     border: 2px;
     border-color: white;
     border-style: solid;
     border-radius: 8px;
+    color: white;
+    text-decoration-line: none;
+    transition: color 150ms linear, background-color 150ms linear;
 }
 
-.red-link-special {
-    padding: 5px 22px;
-    margin: 0px 7px;
-    border: 2px;
-    border-color: white;
-    border-style: solid;
-    border-radius: 8px;
-    background-color: white;
-    color: #c51515;
-}
-
-.blue-link-special {
-    padding: 5px 22px;
-    margin: 0px 7px;
-    border: 2px;
-    border-color: white;
-    border-style: solid;
-    border-radius: 8px;
+.standard-link:hover {
     background-color: white;
     color: #15429A;
+    transition: color 150ms linear, background-color 150ms linear;
 }
 
 #menubar-link-red {
@@ -72,6 +78,138 @@ h1 {
     align-items: center;
 }
 
+#menubar-link-red a {
+    padding: 5px 22px;
+    margin: 0px 7px;
+    border: 2px;
+    border-color: white;
+    border-style: solid;
+    border-radius: 8px;
+    background-color: white;
+    color: #c51515;
+}
+
+.blue-highlighted-link {
+    padding: 5px 22px;
+    margin: 0px 7px;
+    border: 2px;
+    border-color: white;
+    border-style: solid;
+    border-radius: 8px;
+    background-color: white;
+    color: #15429A;
+}
+
+.red-highlighted-link {
+    padding: 5px 22px;
+    margin: 0px 7px;
+    border: 2px;
+    border-color: white;
+    border-style: solid;
+    border-radius: 8px;
+    background-color: white;
+    color: #c51515;
+}
+
+.blue-outlined-box {
+    border-style: solid;
+    border-width: medium;
+    border-radius: 15px;
+    border-color: #15429A;
+}
+
 .blue-filled-box {
+    border-radius: 15px;
     background-color: #15429A;
+}
+
+.blue-filled-box h1 {
+    color: white;
+}
+
+.blue-filled-box p {
+    color: white;
+}
+
+#test-your-candidate {
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+#test-your-candidate .blue-outlined-box {
+    width: 400px;
+    height: 500px;
+    margin: auto 0px;
+}
+
+#test-your-candidate .blue-filled-box {
+    width: 700px;
+    height: auto;
+    margin: auto 0px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+#test-your-candidate .blue-filled-box a {
+    margin-top: 15px;
+    display: inline-block;
+}
+
+#how-does-it-work {
+    background-color: #15429A;
+    display: flex;
+    justify-content: center;
+}
+
+#how-does-it-work article {
+    padding: 100px 0px;
+    width: auto;
+}
+
+#how-does-it-work h1, p, li {
+    color: white;
+}
+
+#obama-testimonial {
+    height: 700px;
+}
+
+#obama-testimonial div {
+    margin: 0px 10%;
+    position: relative;
+}
+
+.red-outlined-box {
+    border-color: #c51515;
+}
+
+.red-outlined-box p {
+    color: #c51515;
+}
+
+#obama-testimonial div article {
+    width: 600px;
+    height: auto;
+    box-sizing: border-box;
+    padding: 20px;
+    position: absolute;
+    right: 50px;
+    top: 100px;
+    background-color: white;
+}
+
+#obama-testimonial div article p:last-of-type {
+    color: #2c2c2c;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: italic;
+    text-align: right;
+    margin-top: 15px;
+}
+
+#vector-obama {
+    width: 700px;
+    height: 700px;
 }

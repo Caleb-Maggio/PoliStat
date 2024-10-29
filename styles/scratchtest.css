@@ -1,0 +1,54 @@
+body {
+    margin: 0px;
+}
+
+a {
+    font-family: "Roboto Slab";
+    font-weight: normal;
+    font-size: 20px;
+}
+
+h1 {
+    font-family: "Kanit";
+    font-weight: 600;
+    font-size: 40px;
+    color: #15429A;
+}
+
+h2 {
+    font-family: "Roboto Slab", serif;
+    font-weight: 500;
+    font-size: 28px;
+    color: #15429A;
+}
+
+p {
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 20px;
+    color: #15429A;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav menu li {
+    list-style: none;
+}
+
+header nav menu#navmenu {
+    display: flex;
+    gap: 50px;
+}
+
+header nav menu li menu.dropdown {
+    display: none;
+    position: absolute;
+}
+
+header nav menu li.dropdown-trigger:hover menu.dropdown{
+    display: block;
+}
