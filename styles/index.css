@@ -198,8 +198,26 @@ li {
     padding: 20px;
     position: absolute;
     right: 50px;
-    top: 100px;
+    bottom: 100px;
     background-color: white;
+}
+
+@media (max-width: 870px) {
+    #obama-testimonial div article {
+        width: 80%;
+        height: auto;
+        box-sizing: border-box;
+        padding: 20px;
+        position: absolute;
+        left: 10%;
+        right: 10%;
+        bottom: 100px;
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+
+    #obama-testimonial div article p:first-of-type {
+        font-size: 1em;
+    }
 }
 
 #obama-testimonial div article p:last-of-type {
@@ -214,4 +232,31 @@ li {
 #vector-obama {
     width: 700px;
     height: 700px;
+}
+
+@media (max-width: 870px) {
+    #vector-obama {
+        object-fit: cover;
+    }
+}
+
+#attributes-info {
+    background-color: #c51515;
+    color: white;
+}
+
+#attributes-info h1 {
+    color: white;
+}
+
+#frequently-asked-questions p {
+    color: #15429A;
+}
+
+#send-a-message {
+    background-color: #15429A;
+}
+
+#send-a-message h1 {
+    color: white;
 }
