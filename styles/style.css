@@ -1,0 +1,21 @@
+h1 {
+    color: white;
+    font-family: "Kanit";
+    font-weight: 600;
+    font-size: 40px;
+}
+
+p, li {
+    color: white;
+    font-family: "Roboto Slab";
+    font-weight: normal;
+    font-size: 20px;
+}
+
+#intro {
+    background-color: #15429A;
+}
+
+#select-attributes h1, #select-attributes p {
+    color: #15429A;
+}
