@@ -1,8 +1,20 @@
+* {
+    margin: 0;
+}
+
+/* sitewide font settings */
+
 h1 {
     color: white;
     font-family: "Kanit";
     font-weight: 600;
     font-size: 40px;
+}
+
+h2 {
+    color: white;
+    font-family: "Roboto Slab";
+    font-weight: 500;
 }
 
 p, li {
@@ -12,10 +24,132 @@ p, li {
     font-size: 20px;
 }
 
-#intro {
+a {
+    color: white;
+    font-family: "Roboto Slab";
+    font-weight: 500;
+    font-size: 20px;
+}
+
+/* form stuff */
+
+label {
+    color: #15429A;
+    font-family: "Roboto Slab";
+    font-weight: normal;
+    font-size: 20px;
+}
+
+textarea {
+    background-color: #e8e8e8;
+    border-style: none;
+    border-radius: 10px;
+    font-family: "Roboto Slab";
+    padding: 10px;
+}
+
+/* sitewide layouts */
+
+header nav {
+    background-color: #15429A;
+    display: flex;
+}
+
+header nav div {
+    margin: auto;   
+}
+
+section {
+    padding: 100px 175px;
+}
+
+.blue-section {
     background-color: #15429A;
 }
 
-#select-attributes h1, #select-attributes p {
+.white-section h1, .white-section h2, .white-section p, .white-section li {
     color: #15429A;
+}
+
+.red-section {
+    background-color: #c51515;
+}
+
+.special-link-red {
+    background-color: white;
+    color: #c51515;
+    padding: 5px 22px;
+    border: 2px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 8px;
+    text-decoration-line: none;
+    transition: color 150ms linear, background-color 150ms linear;
+}
+
+.special-link-red:hover {
+    background-color: #c51515;
+    color: white;
+}
+
+footer {
+    padding: 20px 40px;
+}
+
+/* Specific rules for make-a-candidate */
+
+#make-a-candidate-intro {
+    height: 700px;
+    background-image: url("../images/Vector_Trump_Capitol.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#make-a-candidate-intro div {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    height: 130px;
+    backdrop-filter: blur(4px);
+}
+
+#make-a-candidate-intro h1 {
+    font-size: 60px;
+    padding: 20px 30px;
+}
+
+#select-attributes div {
+    border: 5px;
+    border-style: solid;
+    border-color: #15429A;
+    border-radius: 24px;
+}
+
+#select-attributes div form, #select-attributes div h1 {
+    padding: 40px 40px;
+}
+
+/* specifiuc rules for results page */
+#result {
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+#result h1 {
+    color: #c51515;
+}
+
+#second-result {
+    background-color: #15429A;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+#second-result h1 {
+    color: white;
 }
