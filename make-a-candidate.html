@@ -17,19 +17,21 @@
         
         <header>
             <nav>
-                <div>
-                    <a href="index.html"><img src="images/polistat-logo.png" width=70 height=70 alt="A simple logo consisting of a letter p in a rounded square"></a>
+                <div id="menubar-logo-link">
+                    <a href="index.html">
+                        <img id="menubar-logo" src="images/polistat-logo.png" alt="A simple logo consisting of a letter p in a rounded square">
+                    </a>
                 </div>
-                <div>
+                    <div id="center-links">
                     <a class="link-blue" href="">About</a>
                     <a class="link-blue" href="">Electorate</a>
                     <a class="link-blue" href="scratchtest.html">Blog</a>
                 </div>
-                <div>
+                <div id="final-link">
                     <a class="special-link-red" href="make-a-candidate.html">Make a Candidate</a>
                 </div>
             </nav>
-        </header>
+        </header> 
 
         <section id="make-a-candidate-intro">
             <div>
@@ -56,11 +58,11 @@
         </section>
 
         <section id="select-attributes" class="white-section">
-            <div>
+            <div id="attributes-form">
                 <h1>Select Attributes</h1>
                 
                 <form id="candidate-creator">
-                    <label for="preset" id="preset">Preset</label>
+                    <label class="header-label" for="preset" id="preset">Preset</label>
                     <select name="preset" id="preset">
                         <option value="none">[None]</option>
                         <option value="joe-biden">Joe Biden</option>
@@ -74,10 +76,11 @@
                     </select>
                     <br><br>
 
-                    <img src="images/Vector-Biden.png" width=150 height=150 alt="An angular, vectorized characture of Joseph Biden, wistfully gazing off to his right side.">
+                    <img id="candidate-icon" src="images/Vector-Biden.png" width=150 height=150 alt="An angular,
+                     vectorized characture of Joseph Biden, wistfully gazing off to his right side.">
                     <br>
 
-                    <label for="full-legal-name">Full Legal Name</label>
+                    <label class="header-label" for="full-legal-name">Full Legal Name</label>
                     <input id="full-legal-name" type="text">
                     <br>
                     <input type="radio" name="party-select" id="democratic">
@@ -90,10 +93,9 @@
                     <input type="radio" name="party-select" id="independent">
                     <label for="independent">Independent</label>
 
-                    <br>
-                    <br>
+                    <br><br>
 
-                    <label for="home-state">Home State</label>
+                    <label class="header-label" for="home-state">Home State</label>
                     <select name="home-state" id="home-state">
                         <option value="alabama">Alabama</option>
                         <option value="alaska">Alaska</option>
@@ -148,70 +150,79 @@
                         <option value="wyoming">Wyoming</option>
                     </select>
 
-                    <br>
-                    <br>
-
-                    <label for="mission-statement">Mission Statement</label>
-                    <br>
-                    <textarea placeholder="Write your world domination plans here..." cols="60" rows="10"></textarea>
-
-                    <br>
-                    <br>
-
-                    <label for="tax-reform">Tax Reform</label><br>
-                    <input type="radio" name="tax-reform" id="taxes-left">
-                    <label for="taxes-left">Higher taxes for the upper class</label>
-                    <input type="radio" name="tax-reform" id="taxes-neutral">
-                    <label for="taxes-neutral">Neutral</label>
-                    <input type="radio" name="tax-reform" id="taxes-right">
-                    <label for="taxes-right">Lower taxes for the upper class</label>
                     <br><br>
-                    <label for="global-economy">Global Economy</label><br>
-                    <input type="radio" name="global-economy" id="economy-left">
-                    <label for="economy-left">Supports global trade</label>
-                    <input type="radio" name="global-economy" id="economy-neutral">
-                    <label for="economy-neutral">Neutral</label>
-                    <input type="radio" name="global-economy" id="economy-right">
-                    <label for="economy-right">Supports an isolationist economy</label>
-                    <br><br>
-                    <label for="social-reform">Social Reform</label><br>
-                    <input type="radio" name="social-reform" id="social-left">
-                    <label for="social-left">Has a "In this house we believe..." yard sign</label>
-                    <input type="radio" name="social-reform" id="social-neutral">
-                    <label for="social-neutral">Neutral</label>
-                    <input type="radio" name="social-reform" id="social-right">
-                    <label for="social-right">Flies a Gadsden flag from their lifted Ford F-150</label>
-                    <br><br>
-                    <label for="federal-power">Federal Power</label><br>
-                    <input type="radio" name="federal-power" id="federal-left">
-                    <label for="federal-left">Supports expanding the federal government</label>
-                    <input type="radio" name="federal-power" id="federal-neutral">
-                    <label for="federal-neutral">Neutral</label>
-                    <input type="radio" name="federal-power" id="federal-right">
-                    <label for="federal-right">Opposes expanding the federal government</label>
-                    <br><br>
-                    <label for="immigration">Immigration</label><br>
-                    <input type="radio" name="immigration" id="immigration-left">
-                    <label for="immigration-left">Supports increased immigration</label>
-                    <input type="radio" name="immigration" id="immigration-neutral">
-                    <label for="immigration-neutral">Neutral</label>
-                    <input type="radio" name="immigration" id="immigration-right">
-                    <label for="immigration-right">Supports stricter immigration control</label>
-                    <br><br>
-                    <label for="environment">Environment</label><br>
-                    <input type="radio" name="environment" id="environment-left">
-                    <label for="environment-left">Save the Trees</label>
-                    <input type="radio" name="environment" id="environment-neutral">
-                    <label for="environment-neutral">Neutral</label>
-                    <input type="radio" name="environment" id="environment-right">
-                    <label for="environment-right">Save the Oil Fields</label>
 
+                    <label class="header-label" for="mission-statement">Mission Statement</label>
                     <br>
-                    <br>
+                    <textarea placeholder="Write your world domination plans here..."></textarea>
 
-                    <label for="personal-questions">If you had a billion dollars (assuming you don't already) what would you do?</label>
+                    <br><br>
+
+                    <label class="header-label" for="tax-reform">Tax Reform</label><br>
+                    <div class="position-options">
+                        <input type="radio" name="tax-reform" id="taxes-left">
+                        <label for="taxes-left">Higher taxes for the upper class</label>
+                        <input type="radio" name="tax-reform" id="taxes-neutral">
+                        <label for="taxes-neutral">Neutral</label>
+                        <input type="radio" name="tax-reform" id="taxes-right">
+                        <label for="taxes-right">Lower taxes for the upper class</label>
+                    </div>
+                    <br><br>
+                    <label class="header-label" for="global-economy">Global Economy</label><br>
+                    <div class="position-options">
+                        <input type="radio" name="global-economy" id="economy-left">
+                        <label for="economy-left">Supports global trade</label>
+                        <input type="radio" name="global-economy" id="economy-neutral">
+                        <label for="economy-neutral">Neutral</label>
+                        <input type="radio" name="global-economy" id="economy-right">
+                        <label for="economy-right">Supports an isolationist economy</label>
+                    </div>
+                    <br><br>
+                    <label class="header-label" for="social-reform">Social Reform</label><br>
+                    <div class="position-options">
+                        <input type="radio" name="social-reform" id="social-left">
+                        <label for="social-left">Has a "In this house we believe..." yard sign</label>
+                        <input type="radio" name="social-reform" id="social-neutral">
+                        <label for="social-neutral">Neutral</label>
+                        <input type="radio" name="social-reform" id="social-right">
+                        <label for="social-right">Flies a Gadsden flag from their lifted Ford F-150</label>
+                    </div>
+                    <br><br>
+                    <label class="header-label" for="federal-power">Federal Power</label><br>
+                    <div class="position-options">
+                        <input type="radio" name="federal-power" id="federal-left">
+                        <label for="federal-left">Supports expanding the federal government</label>
+                        <input type="radio" name="federal-power" id="federal-neutral">
+                        <label for="federal-neutral">Neutral</label>
+                        <input type="radio" name="federal-power" id="federal-right">
+                        <label for="federal-right">Opposes expanding the federal government</label>
+                    </div>
+                    <br><br>
+                    <label class="header-label" for="immigration">Immigration</label><br>
+                    <div class="position-options">
+                        <input type="radio" name="immigration" id="immigration-left">
+                        <label for="immigration-left">Supports increased immigration</label>
+                        <input type="radio" name="immigration" id="immigration-neutral">
+                        <label for="immigration-neutral">Neutral</label>
+                        <input type="radio" name="immigration" id="immigration-right">
+                        <label for="immigration-right">Supports stricter immigration control</label>
+                    </div>
+                    <br><br>
+                    <label class="header-label" for="environment">Environment</label><br>
+                    <div class="position-options">
+                        <input type="radio" name="environment" id="environment-left">
+                        <label for="environment-left">Save the Trees</label>
+                        <input type="radio" name="environment" id="environment-neutral">
+                        <label for="environment-neutral">Neutral</label>
+                        <input type="radio" name="environment" id="environment-right">
+                        <label for="environment-right">Save the Oil Fields</label>
+                    </div>
+
+                    <br><br>
+
+                    <label class="header-label" for="personal-questions">If you had a billion dollars (assuming you don't already) what would you do?</label>
                     <br>
-                    <textarea placeholder="I would buy a puppy and maybe a Lockheed-Martin F-35" cols="60" rows="10"></textarea>
+                    <textarea placeholder="I would buy a puppy and maybe a Lockheed-Martin F-35"></textarea>
                 </form>
             </div>
         </section>
