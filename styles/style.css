@@ -64,6 +64,17 @@ input[type=text] {
     padding: 6px;
 }
 
+button {
+    padding: 5px 22px;
+    border: 2px;
+    border-style: none;
+    border-radius: 8px;
+    background-color: #e8e8e8;
+    font-family: "Roboto Slab";
+    font-size: 16px;
+    margin-top: 10px;
+}
+
 /* sitewide layouts */
 
 /* subsection: menubar */
@@ -174,6 +185,21 @@ footer {
     padding: 20px 40px;
 }
 
+/* Specific rules for homepage */
+
+#send-a-message {
+    text-align: center;
+}
+
+#send-a-message label {
+    color: white;
+}
+
+#message-form {
+    width: 200px;
+    text-align: left;
+}
+
 /* Specific rules for make-a-candidate */
 
 #make-a-candidate-intro {
@@ -227,7 +253,11 @@ footer {
     height: 200px;
 }
 
-/* specifiuc rules for results page */
+#submit-form {
+    text-align: center;
+}
+
+/* specific rules for results page */
 #result {
     background-color: white;
     width: 250px;
