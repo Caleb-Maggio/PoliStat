@@ -12,7 +12,7 @@ if (result) {
     $("#result-display").html("Won");
     $("#results").css("background-color", "#15429A");
     $("#result-display").css("color", "#15429A");
-    $("#result-display-continued").html("...the vote! Read the info below to find out who\'s responsible for this.");
+    $("#result-display-continued").html("...the vote! Read the info below to find out who\'s responsible for this. (Values and stats are placeholders, and not actually calculated.)");
     $("#second-result h1").html("62%");
     $("#second-result-text h2").html("of people voted for you. It\'s enough to win an election, but not enough to get everyone to like you.");
     $("#entry-one").html("Jessica W. from Idaho voted for you because she\'s your mother, and not voting for your own child is just messed up.");
