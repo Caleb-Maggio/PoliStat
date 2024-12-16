@@ -50,9 +50,9 @@
                 <h1>Results</h1>
                 <p>After some serious number crunching, it looks like you...</p>
             </div>
-            <div id="result-circle"><h1>Failed</h1></div>
+            <div id="result-circle"><h1 id="result-display">Failed</h1></div>
             <div id="results-words-2">
-                <p>...to secure enough votes to win anything. Read the info below to find out who let you down.</p>
+                <p id="result-display-continued">...to secure enough votes to win anything. Read the info below to find out who let you down.</p>
             </div>
             <!--
             <div id="results-map">
@@ -71,13 +71,12 @@
             <div class="blue-outlined-insert" id="other-interesting-stats">
                 <h2>Some other interesting stats:</h2>
                 <ul>
-                    <li>Basil H. from Ohio left his house for the first time in 12 years so he could vote against
+                    <li id="entry-one">Basil H. from Ohio left his house for the first time in 12 years so he could vote against
                         your stance on the environment.
                     </li>
-                    <li>Anya S. from Colorado voted for you because you "were a true Coloradan", despite the fact
+                    <li id="entry-two">Anya S. from Colorado voted for you because you "were a true Coloradan", despite the fact
                         that you're from Delaware.
-                    </li>
-                    <li>Daniel R. from Massachusetts voted against you because he wanted to be taxed more instead
+                    <li id="entry-three">Daniel R. from Massachusetts voted against you because he wanted to be taxed more instead
                         of less.
                     </li>
                 </ul>
@@ -99,5 +98,6 @@
 
         <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
         <script src="scripts/global.js"></script>
+        <script src="scripts/results.js"></script>
     </body>
 </html>

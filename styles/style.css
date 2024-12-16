@@ -387,6 +387,10 @@ footer h2 {
         grid-template-rows: 100% 100%;
         grid-template-columns: 100%;
     }
+
+    #vector-biden, #vector-obama, #vector-vance {
+        margin: auto;
+    }
 }
 
 @media (max-width: 550px) {
@@ -531,7 +535,7 @@ footer h2 {
 #more-results {
     display: grid;
     grid-template-rows: 50% 50%;
-    grid-template-columns: 25% 75%;
+    grid-template-columns: 20% 80%;
     grid-gap: 25px;
 }
 
