@@ -16,10 +16,10 @@
     </head>
 
     <header>
-        <nav>
-            <div id="menubar-logo-link">
+        <nav id="desktop-menubar">
+            <div class="menubar-logo-link">
                 <a href="index.html">
-                    <img id="menubar-logo" src="images/PoliStat_Logo.png" alt="A simple logo consisting of a letter p in a rounded square">
+                    <img class="menubar-logo" src="images/PoliStat_Logo.png" alt="A simple logo consisting of a letter p in a rounded square">
                 </a>
             </div>
                 <div id="center-links">
@@ -31,6 +31,24 @@
                 <a class="special-link-red" href="make-a-candidate.html">Make a Candidate</a>
             </div>
         </nav>
+
+        <nav id="mobile-menubar">
+            <div class="menubar-logo-link">
+                <a href="index.html">
+                    <img class="menubar-logo" src="images/PoliStat_Logo.png" alt="A simple logo consisting of a letter p in a rounded square">
+                </a>
+            </div>
+            <div id="mobile-menubar-menu">
+                <button id="mobile-menubar-button">Menu</button>
+            </div>
+        </nav>
+
+        <div id="mobile-menubar-links">
+            <a class="mobile-menubar-link" href="">About</a>
+            <a class="mobile-menubar-link" href="">Electorate</a>
+            <a class="mobile-menubar-link" href="scratchtest.html">Blog</a>
+            <a class="mobile-menubar-link" href="make-a-candidate.html">Make a Candidate</a>
+        </div>
     </header>
 
     <body>
@@ -126,7 +144,7 @@
                     <br><br>
                     <label><i>Your grievences may or may not be taken into consideration.</i></label>
                     <br>
-                    <button>Complain</button>
+                    <button id="complaint-button">Complain</button>
                 </form>
             </div>
         </section>
@@ -138,5 +156,9 @@
             <a href="scratchtest.html">Blog</a>
             <a href="">Created Candidates</a>
         </footer>
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="scripts/global.js"></script>
+        <script src="scripts/home.js"></script>
     </body>
 </html>

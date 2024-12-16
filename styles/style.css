@@ -88,13 +88,13 @@ header nav {
     width: 100%;
 }
 
-#menubar-logo-link {
+.menubar-logo-link {
     margin: 0px 30px 0px 30px;
     display: flex;
     align-items: center;
 }
 
-#menubar-logo {
+.menubar-logo {
     width: 50px;
 }
 
@@ -112,6 +112,44 @@ header nav {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#mobile-menubar {
+    display: none;
+}
+
+#mobile-menubar-links { display: none; }
+
+.mobile-menubar-link {
+    text-decoration-line: none;
+    transition: color 150ms linear, background-color 150ms linear;
+    width: 100%;
+    display: block;
+    height: 50px;
+    text-align: center;
+}
+
+.mobile-menubar-link:hover {
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(21, 66, 154, 1);
+}
+
+/* subsection: mobile menubar */
+
+@media (max-width: 900px) {
+    #desktop-menubar { display: none; }
+    #mobile-menubar { 
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #mobile-menubar-links {
+        background-color: rgba(21, 66, 154, 0.7);
+        width: 100%;
+        display: none;
+        position: fixed;
+        top: 70px;
+    }
 }
 
 /* subsection: section styling */
@@ -301,8 +339,7 @@ footer {
     }
 
     #vector-obama {
-        width: 500px;
-        height: 500px;
+        height: 550px;
     }
 
     #vector-vance {
@@ -320,6 +357,23 @@ footer {
         grid-gap: 30px;
         grid-template-rows: 100% 100%;
         grid-template-columns: 100%;
+    }
+}
+
+@media (max-width: 550px) {
+    #vector-biden {
+        height: 100%;
+        width: 100%;
+    }
+
+    #vector-obama {
+        height: 100%;
+        width: 100%;
+    }
+
+    #vector-vance {
+        height: 100%;
+        width: 100%;
     }
 }
 

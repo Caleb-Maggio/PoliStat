@@ -17,9 +17,9 @@
         
         <header>
             <nav>
-                <div id="menubar-logo-link">
+                <div class="menubar-logo-link">
                     <a href="index.html">
-                        <img id="menubar-logo" src="images/PoliStat_Logo.png" alt="A simple logo consisting of a letter p in a rounded square">
+                        <img class="menubar-logo" src="images/PoliStat_Logo.png" alt="A simple logo consisting of a letter p in a rounded square">
                     </a>
                 </div>
                     <div id="center-links">
@@ -62,8 +62,8 @@
                 <h1>Select Attributes</h1>
                 
                 <form id="candidate-creator">
-                    <label class="header-label" for="preset" id="preset">Preset</label>
-                    <select name="preset" id="preset">
+                    <label class="header-label" for="avatar">Avatar</label>
+                    <select name="avatar" id="avatar">
                         <option value="none">[None]</option>
                         <option value="joe-biden">Joe Biden</option>
                         <option value="hillary-clinton">Hillary Clinton</option>
@@ -76,8 +76,7 @@
                     </select>
                     <br><br>
 
-                    <img id="candidate-icon" src="images/Vector_Biden_Cropped.png" width=150 height=150 alt="An angular,
-                     vectorized characture of Joseph Biden, wistfully gazing off to his right side.">
+                    <img id="candidate-icon" src="" width=150 height=150>
                     <br>
 
                     <label class="header-label" for="full-legal-name">Full Legal Name</label>
@@ -243,6 +242,9 @@
             <a href="scratchtest.html">Blog</a>
             <a href="">Created Candidates</a>
         </footer>
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="scripts/make-a-candidate.js"></script>
     </body>
 
 </html>
