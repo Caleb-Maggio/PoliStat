@@ -14,35 +14,51 @@
 
     <body>
         <header>
-            <nav>
+            <nav id="desktop-menubar">
                 <div class="menubar-logo-link">
-                    <a href="index.html">
-                        <img class="menubar-logo" src="images/PoliStat_Logo.png" alt="A simple logo consisting of a letter p in a rounded square">
-                    </a>
+                    <h2>PoliStat</h2>
                 </div>
                     <div id="center-links">
-                    <a class="link-blue" href="">About</a>
-                    <a class="link-blue" href="">Electorate</a>
-                    <a class="link-blue" href="scratchtest.html">Blog</a>
+                    <a class="link-blue" href="index.html">Home</a>
+                    <a class="link-blue" href="scratchtest.html">Blog (Beta)</a>
                 </div>
                 <div id="final-link">
                     <a class="special-link-red" href="make-a-candidate.html">Make a Candidate</a>
                 </div>
             </nav>
+    
+            <nav id="mobile-menubar">
+                <div class="menubar-logo-link">
+                    <h2>PoliStat</h2>
+                </div>
+                <div id="mobile-menubar-menu">
+                    <button class="link-blue" id="mobile-menubar-button">Open Menu</button>
+                </div>
+            </nav>
+    
+            <div id="mobile-menubar-links">
+                <a class="mobile-menubar-link" href="index.html">Home</a>
+                <a class="mobile-menubar-link" href="scratchtest.html">Blog (Beta)</a>
+                <a class="mobile-menubar-link" href="make-a-candidate.html">Make a Candidate</a>
+            </div>
         </header>
 
         <div id="spacer"></div>
 
         <section id="results" class="red-section">
-            <div id="results-words">
+            <div id="results-words-1">
                 <h1>Results</h1>
                 <p>After some serious number crunching, it looks like you...</p>
-                <div id="result-circle"><h1>Failed</h1></div>
-                <p>...to secure enough votes to win anything. Take a look at the map to find out who let you down.</p>
             </div>
+            <div id="result-circle"><h1>Failed</h1></div>
+            <div id="results-words-2">
+                <p>...to secure enough votes to win anything. Read the info below to find out who let you down.</p>
+            </div>
+            <!--
             <div id="results-map">
                 <img src="images/map.png" width="700" height="400" alt="A image of a united states map, with certain states shaded in varying shades of blue.">
             </div>
+            -->
         </section>
 
         <section id="more-results" class="white-section">
@@ -76,11 +92,12 @@
         </section>
 
         <footer class="blue-section">
-            <img src="images/PoliStat_Logo.png" width=70 height=70 alt="A simple logo consisting of a letter p in a rounded square">
-            <a href="">About</a>
-            <a href="">Electorate</a>
-            <a href="scratchtest.html">Blog</a>
-            <a href="">Created Candidates</a>
+            <h2>PoliStat</h2>
+            <a href="index.html">Home</a>
+            <a href="scratchtest.html">Blog (Beta)</a>
         </footer>
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="scripts/global.js"></script>
     </body>
 </html>

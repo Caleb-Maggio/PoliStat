@@ -16,21 +16,33 @@
     <body>
         
         <header>
-            <nav>
+            <nav id="desktop-menubar">
                 <div class="menubar-logo-link">
-                    <a href="index.html">
-                        <img class="menubar-logo" src="images/PoliStat_Logo.png" alt="A simple logo consisting of a letter p in a rounded square">
-                    </a>
+                    <h2>PoliStat</h2>
                 </div>
                     <div id="center-links">
-                    <a class="link-blue" href="">About</a>
-                    <a class="link-blue" href="">Electorate</a>
-                    <a class="link-blue" href="scratchtest.html">Blog</a>
+                    <a class="link-blue" href="index.html">Home</a>
+                    <a class="link-blue" href="scratchtest.html">Blog (Beta)</a>
                 </div>
                 <div id="final-link">
                     <a class="special-link-red" href="make-a-candidate.html">Make a Candidate</a>
                 </div>
             </nav>
+    
+            <nav id="mobile-menubar">
+                <div class="menubar-logo-link">
+                    <h2>PoliStat</h2>
+                </div>
+                <div id="mobile-menubar-menu">
+                    <button class="link-blue" id="mobile-menubar-button">Open Menu</button>
+                </div>
+            </nav>
+    
+            <div id="mobile-menubar-links">
+                <a class="mobile-menubar-link" href="index.html">Home</a>
+                <a class="mobile-menubar-link" href="scratchtest.html">Blog (Beta)</a>
+                <a class="mobile-menubar-link" href="make-a-candidate.html">Make a Candidate</a>
+            </div>
         </header> 
 
         <section id="make-a-candidate-intro">
@@ -64,7 +76,7 @@
                 <form id="candidate-creator">
                     <label class="header-label" for="avatar">Avatar</label>
                     <select name="avatar" id="avatar">
-                        <option value="none">[None]</option>
+                        <option selected="selected" value="none">[None]</option>
                         <option value="joe-biden">Joe Biden</option>
                         <!-- <option value="hillary-clinton">Hillary Clinton</option> -->
                         <option value="kamala-harris">Kamala Harris</option>
@@ -85,11 +97,13 @@
                     <br>
                     <input type="radio" name="party-select" id="democratic">
                     <label for="democratic">Democratic</label>
+                    <br>
                     <input type="radio" name="party-select" id="republican">
                     <label for="republican">Republican</label>
                     <br>
                     <input type="radio" name="party-select" id="third-party">
                     <label for="third-party">Third-Party</label>
+                    <br>
                     <input type="radio" name="party-select" id="independent">
                     <label for="independent">Independent</label>
 
@@ -249,14 +263,13 @@
         </section>
 
         <footer class="red-section">
-            <img src="images/PoliStat_Logo.png" width=70 height=70 alt="A simple logo consisting of a letter p in a rounded square">
-            <a href="">About</a>
-            <a href="">Electorate</a>
-            <a href="scratchtest.html">Blog</a>
-            <a href="">Created Candidates</a>
+            <h2>PoliStat</h2>
+            <a href="index.html">Home</a>
+            <a href="scratchtest.html">Blog (Beta)</a>
         </footer>
 
         <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="scripts/global.js"></script>
         <script src="scripts/make-a-candidate.js"></script>
     </body>
 

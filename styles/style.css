@@ -75,6 +75,15 @@ button {
     margin-top: 10px;
 }
 
+select {
+    padding: 10px 15px;
+    background: #e8e8e8;
+    font-family: "Roboto Slab";
+    font-size: 16px;
+    border-style: none;
+    border-radius: 8px;
+}
+
 /* sitewide layouts */
 
 /* subsection: menubar */
@@ -86,6 +95,7 @@ header nav {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1;
 }
 
 .menubar-logo-link {
@@ -156,6 +166,7 @@ header nav {
     }
     #mobile-menubar-links {
         background-color: rgba(21, 66, 154, 0.7);
+        backdrop-filter: blur(4px);
         width: 100%;
         display: none;
         position: fixed;
@@ -270,6 +281,13 @@ section {
 
 footer {
     padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+footer h2 {
+    font-size: 36px;
 }
 
 /* Other random stuff */
@@ -396,18 +414,17 @@ footer {
     background-size: cover;
     background-position: center;
     display: flex;
-    align-items: top;
-    justify-content: right;
+    align-items: flex-end;
+    justify-content: center;
 }
 
 #make-a-candidate-intro div {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 8px;
-    height: 130px;
     width: 600px;
     text-align: center;
     backdrop-filter: blur(4px);
-    margin-top: 50px;
+    z-index: 0;
 }
 
 #make-a-candidate-intro h1 {
@@ -450,13 +467,46 @@ footer {
     text-align: center;
 }
 
+@media (max-width: 700px) {
+    #make-a-candiate-intro div {
+        height: 50px;
+    }
+
+    #make-a-candidate-intro h1 {
+        font-size: 40px;
+        padding: 20px 30px;
+    }
+
+    #info p, #info li {
+        font-size: 16px;
+    }
+
+    #attributes-form {
+        width: 100%;
+        margin: auto;
+    }
+
+    #submit-form h1 {
+        font-size: 28px;
+    }
+
+    #submit-form h2 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 500px) {
+    #candidate-icon {
+        width: 100%;
+        height: 100%;
+    }
+}
+
 /* specific rules for results page */
 #results {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-}
-
-#results h1 {
     text-align: center;
 }
 
@@ -466,6 +516,7 @@ footer {
     width: 250px;
     height: 250px;
     border-radius: 50%;
+    margin: auto;
 
     display: flex;
     align-items: center;
